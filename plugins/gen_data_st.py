@@ -1,6 +1,6 @@
-
 import argparse
 import sentence_transformers
+
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores.faiss import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
@@ -118,7 +118,8 @@ for i in range(len(all_files)):
 
 
 if len(all_files) == 0:
-    error_print("txt 目录没有数据")
+    #error_print("txt 目录没有数据")
+    print("txt 目录没有数据")
     sys.exit(0)
 
 if len(docs) > 0:
